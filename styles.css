@@ -1,0 +1,46 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: normal;
+}
+
+body{
+    padding: 25px;
+    margin: 0;
+    background: linear-gradient(to right, #BB9DF9, #4570F7);
+}
+
+.image-grid{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(235px, auto) repeat(2, 125px);
+}
+
+.image-grid > button {
+    cursor: pointer;
+    font-size: 2rem;
+    border: 1px solid white;
+    outline: none;
+    background-color: rgba(255, 255, 255, .47);
+}
+
+.image-grid > button:hover {
+    background-color: rgba(255, 255, 255, .75);
+}
+
+.span-four{
+    grid-column: span 4;
+}
+
+.output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 0px;
+}
