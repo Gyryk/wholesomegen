@@ -34,13 +34,15 @@ var myPix = new Array(
 "images/31.jpg"
 );
 
-function choosePic() {
+function choosePic() 
+{
      var randomNum = Math.floor(Math.random() * myPix.length);
      document.getElementById("myPicture").src = myPix[randomNum];
 }
 
 const newPicButton = document.querySelector('[data-random]');
 
-newPicButton.addEventListener('click', button => {
+newPicButton.addEventListener('click', button => 
+{
     choosePic();
 })
