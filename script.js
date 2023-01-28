@@ -14,7 +14,7 @@ window.onload = readTextFile("ImagesLink.txt");
                 {
                     var allText = rawFile.responseText;
                     links = allText.split("\n");
-                    document.getElementById("testText").src = allText;
+                    document.getElementById("testText").innerHTML = allText;
                 }
             }
         }
