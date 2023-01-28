@@ -1,4 +1,4 @@
 # WholesomeGen
-A website that shows you a bunch of cute pics (www.wholesome.cf)
-So basically I've got an array of wholesome pictures in my script file and every time you press a button you get a new one. If you're having a bad day just try this out.
-Any feedback is appreciated
+A website that shows you a bunch of cute pictures of animals
+Just here to maybe improve someone's day
+There is a webscraper that gets a bunch of links for the images and then they're used to output the image
