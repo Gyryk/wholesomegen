@@ -14,15 +14,15 @@ fs.readFile("ImagesLink.txt", "UTF-8", (err, data) =>
     }
 })
     
-    function choosePic() 
-    {
-        var randomNum = Math.floor(Math.random() * links.length);
-        document.getElementById("myPicture").src = links[randomNum];
-    }
+function choosePic() 
+{
+    var randomNum = Math.floor(Math.random() * links.length);
+    document.getElementById("myPicture").src = links[randomNum];
+}
     
-    const newPicButton = document.querySelector('[data-random]');
+const newPicButton = document.querySelector('[data-random]');
     
-    newPicButton.addEventListener('click', button => 
-    {
-        choosePic();
-    })
+newPicButton.addEventListener('click', button => 
+{
+    choosePic();
+})
