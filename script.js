@@ -1,6 +1,6 @@
-window.onload = readTextFile("ImagesLink.txt");
-
 links = new Array();
+
+window.onload = readTextFile("ImagesLink.txt");
 
     function readTextFile(file)
     {
