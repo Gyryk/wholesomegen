@@ -1,7 +1,7 @@
 *, *::before, *::after {
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: normal;
+    font-family: 'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
 }
 
 body{
@@ -21,7 +21,7 @@ body{
 
 .image-grid > button {
     cursor: pointer;
-    font-size: 2rem;
+    font-size: 3rem;
     border: 1px solid white;
     outline: none;
     background-color: rgba(255, 255, 255, .47);
