@@ -1,26 +1,18 @@
+const fs = require('fs')
+
 links = new Array();
 
-window.onload = readTextFile("ImagesLink.txt");
-
-    function readTextFile(file)
+fs.readFile("ImagesLink.txt", "UTF-8", (err, data) =>
+{
+    if(err)
     {
-        var rawFile = new XMLHttpRequest();
-        rawFile.open("GET", file, false);
-        rawFile.onreadystatechange = function ()
-        {
-            if(rawFile.readyState === 4)
-            {
-                if(rawFile.status === 200 || rawFile.status == 0)
-                {
-                    var allText = rawFile.responseText;
-                    links = allText.split("\n");
-                    document.getElementById("testText").innerHTML = allText;
-                }
-            }
-        }
-
-        rawFile.send(null);
+        throw err;
     }
+    else
+    {
+        links = data.split();
+    }
+})
     
     function choosePic() 
     {
